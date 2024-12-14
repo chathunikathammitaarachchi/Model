@@ -1,0 +1,292 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #03080a;
+}
+
+
+form {
+    display: flex;
+    
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+input,
+select,
+button {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #818182;
+}
+
+p {
+    font-size: 0.95rem;
+    text-align: center;
+    color: #7f8c8d;
+}
+
+/* Loader */
+.loader {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #7f8c8d;
+}
+
+/* Profile Page Styling */
+.profile-container {
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.profile-header h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+}
+
+.profile-header p {
+    font-size: 1.1rem;
+    color: #95a5a6;
+}
+
+.profile-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.profile-picture {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3498db;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.profile-details p {
+    font-size: 1rem;
+    color: #34495e;
+    margin: 10px 0;
+}
+
+.profile-info .info-label {
+    font-weight: bold;
+    color: #040505;
+}
+
+.logout-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.logout-button:hover {
+    background-color: #c0392b;
+}
+
+
+
+
+.user-profile {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.user-profile h2 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+.user-profile p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+
+.user-profile button {
+  padding: 10px 20px;
+  background-color: #e4effa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
+}
+
+.user-profile button:hover {
+  background-color: #000000;
+}
+
+.user-profile button:focus {
+  outline: none;
+}
+
+
+.user-profile button a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.user-profile a {
+  color: #9ba8b6;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.user-profile a:hover {
+  color: #9da9b6;
+}
+
+
+.user-profile p.loading {
+  text-align: center;
+  font-size: 1.2em;
+  color: #777;
+}
+
+
+@media (max-width: 768px) {
+  .user-profile {
+    padding: 15px;
+  }
+
+  .user-profile h2 {
+    font-size: 1.8em;
+  }
+
+  .user-profile p {
+    font-size: 1em;
+  }
+
+  .user-profile button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+    .profile-info {
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+    }
+
+    form {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .profile-container {
+        padding: 25px;
+    }
+
+    .profile-header h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .profile-container {
+        padding: 20px;
+    }
+
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-info {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
